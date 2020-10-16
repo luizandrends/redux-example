@@ -10,7 +10,8 @@ export default function techs(state = INITIAL_STATE, action) {
       case '@tech/SIGN_IN_REQUEST': {
         const { techName } = action.payload;
 
-        draft.techs = techName;
+        draft.techs.push(techName);
+
         break;
       }
       default:
