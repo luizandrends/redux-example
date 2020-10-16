@@ -5,11 +5,13 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  align-self: center;
 
   span {
     font-size: 22px;
@@ -37,4 +39,12 @@ export const Content = styled.div`
     color: #000;
     background: #fff;
   }
+`;
+
+export const List = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+  margin-top: 22px;
 `;

@@ -1,8 +1,13 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-import { Container, Content } from './styles';
+import { Container, Content, List } from './styles';
 
 function Techs() {
+  const techsState = useSelector((state) => state.techs);
+
+  const { techs } = techsState;
+
   return (
     <Container>
       <Content>
@@ -10,6 +15,14 @@ function Techs() {
         <input type="text" placeholder="Tecnologia" />
         <button type="button">ADICIONAR</button>
       </Content>
+
+      <List>
+        {techs.length <= 0 ? (
+          <strong>Array vazio</strong>
+        ) : (
+          techs.map((tech) => <strong>{tech}</strong>)
+        )}
+      </List>
     </Container>
   );
 }
