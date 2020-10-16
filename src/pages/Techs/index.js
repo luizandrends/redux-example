@@ -1,9 +1,17 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Container, Content } from './styles';
 
 function Techs() {
-  return <h1>Techs</h1>;
+  return (
+    <Container>
+      <Content>
+        <span>Informe uma tecnologia para o estado do redux</span>
+        <input type="text" placeholder="Tecnologia" />
+        <button type="button">ADICIONAR</button>
+      </Content>
+    </Container>
+  );
 }
 
 export default Techs;

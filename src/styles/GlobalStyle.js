@@ -16,6 +16,7 @@ html, body, #root {
 }
 body{
   -webkit-font-smoothing: antialiased !important;
+  background-image: linear-gradient(to left, #7159c1 10%, #ab59c1 100%);
 }
 body, input, button {
   font: 14px 'Roboto', sans-serif;

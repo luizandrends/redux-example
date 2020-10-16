@@ -1,3 +1,5 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({});
+import techs from './techs/reducers';
+
+export default combineReducers({ techs });
